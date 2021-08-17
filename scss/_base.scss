@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+body {
+    font-size: $font;
+    font-family: $font-family;
+    background: $bodyColor;
+}
+
+.povlaka {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 7px;
+    width: 10%;
+    background: linear-gradient(to right, $secondary 50%, $primary);
+}

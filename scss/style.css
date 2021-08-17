@@ -1,0 +1,631 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  background: #f6f8fa;
+}
+
+.povlaka {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 7px;
+  width: 10%;
+  background: linear-gradient(to right, #244b26 50%, #52a3bd);
+}
+
+/******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+                               H E A D E R
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************/
+.icons {
+  position: fixed;
+  top: 50%;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+@media (max-width: 766px) {
+  .icons {
+    right: 0px;
+  }
+}
+.icons a {
+  font-size: 3rem;
+}
+@media (max-width: 766px) {
+  .icons a {
+    font-size: 1.8rem;
+  }
+}
+.icons a .fa-facebook-square {
+  color: darkblue;
+}
+.icons a .fa-instagram-square {
+  color: darkmagenta;
+}
+.icons a .fa-youtube-square {
+  color: darkred;
+}
+.icons a:hover {
+  margin-left: -15px;
+}
+
+header {
+  background: url(../img/drive-download-20210816T092223Z-001/header1.webp);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+}
+header .linear-gradient {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #244b26 50%, #52a3bd);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  align-items: center;
+  padding: 0 40px;
+}
+@media (max-width: 766px) {
+  header nav {
+    display: none;
+  }
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin-left: 30px;
+}
+header nav ul li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #6b6b6b;
+  text-transform: uppercase;
+}
+header nav ul li a:hover {
+  color: #52a3bd;
+}
+header h1 {
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(128, 255, 0, 0.485);
+  box-shadow: 2px 2px 40px chartreuse;
+  display: inline-block;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+                                I S T R A Z I T E
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************/
+.istrazite {
+  padding: 100px 0;
+}
+.istrazite .povlaka {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 7px;
+  width: 10%;
+  background: linear-gradient(to right, #244b26 50%, #52a3bd);
+}
+.istrazite h1 {
+  font-size: 2.5rem;
+  padding: 20px;
+  text-align: center;
+  color: #6b6b6b;
+  font-weight: 900;
+  text-shadow: 0 0 4px #6b6b6b;
+}
+.istrazite .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.istrazite .container article {
+  flex: 0 0 49%;
+  position: relative;
+  margin-bottom: 20px;
+}
+@media (max-width: 766px) {
+  .istrazite .container article {
+    flex: 0 0 90%;
+    margin: 30px auto;
+  }
+}
+.istrazite .container article:hover {
+  transform: scale(0.99);
+  transition: 1.5s ease-in-out;
+}
+.istrazite .container article img {
+  width: 100%;
+  box-shadow: 0 0 10px #6b6b6b;
+  border-radius: 10px;
+  height: 300px;
+}
+.istrazite .container article h1 {
+  position: absolute;
+  color: #d3c691;
+  z-index: 3;
+  font-size: 1.5rem;
+  bottom: 30px;
+  left: 20px;
+  background: #fff;
+  color: #52a3bd;
+  padding: 5px 10px;
+  font-weight: 300;
+}
+
+/******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+                                D O G A D J A N J A
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************/
+.dogadjanja {
+  padding: 100px 0;
+}
+.dogadjanja h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 20px 0 40px 0;
+  color: #6b6b6b;
+  text-shadow: 0 0 4px #6b6b6b;
+}
+.dogadjanja .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dogadjanja .container article {
+  flex: 0 0 30%;
+  box-shadow: 0 0 10px #6b6b6b;
+}
+@media (max-width: 766px) {
+  .dogadjanja .container article {
+    flex: 0 0 90%;
+    margin: 30px auto;
+  }
+}
+.dogadjanja .container article img {
+  width: 100%;
+}
+.dogadjanja .container article img:hover {
+  transform: scale(0.99);
+  transition: 0.9s;
+}
+.dogadjanja .container article .text {
+  background: #fff;
+  padding: 30px 10px;
+}
+.dogadjanja .container article .text h3 {
+  color: #6b6b6b;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.dogadjanja .container article .text h1 {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 10px 0 20px 0;
+  font-weight: 500;
+}
+.dogadjanja .container article .text a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 5px 20px;
+  border: 1px solid black;
+  color: black;
+}
+.dogadjanja .container article .text a:hover {
+  background: #52a3bd;
+  color: #fff;
+  border: 0;
+  transition: 0.6s ease;
+}
+
+/******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+                                F O O T E R
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************/
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/drive-download-20210816T092223Z-001/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  line-height: 1.4;
+  padding: 10vh;
+  color: #fff;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .container article {
+  flex: 0 0 30%;
+}
+@media (max-width: 766px) {
+  footer .container article {
+    flex: 0 0 90%;
+    margin: 20px auto;
+  }
+}
+footer .container article h1 {
+  padding: 20px 0;
+  font-size: 1.8rem;
+  text-shadow: 0 0 4px #6b6b6b;
+}
+footer .container article a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 2;
+}
+
+.header1 {
+  background: url(../img/drive-download-20210816T092223Z-001/izleti.webp);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.tekstDobrodoslice {
+  padding: 100px 40px 0 40px;
+}
+.tekstDobrodoslice h1 {
+  padding: 20px 0;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #52a3bd;
+  text-shadow: 0 0 4px #6b6b6b;
+}
+.tekstDobrodoslice p {
+  color: #6b6b6b;
+}
+.tekstDobrodoslice::after {
+  content: "";
+  display: block;
+  height: 5px;
+  max-width: 1140px;
+  background: #555;
+  margin: 100px auto;
+}
+
+.izleti-header {
+  height: 70vh;
+}
+
+body {
+  background: #fff;
+}
+
+.izleti {
+  padding: 60px 0;
+}
+.izleti .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.izleti .container article {
+  flex: 0 0 30%;
+}
+@media (max-width: 766px) {
+  .izleti .container article {
+    flex: 0 0 80%;
+    margin: 30px auto;
+  }
+}
+.izleti .container article img {
+  width: 100%;
+}
+.izleti .container article .text {
+  background: #fff;
+  padding: 30px 10px;
+}
+.izleti .container article .text h3 {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 20px 0;
+}
+.izleti .container article .text p {
+  color: #6b6b6b;
+}
+
+.ribolov-header {
+  height: 70vh;
+}
+
+.ribolov {
+  padding: 100px 0;
+}
+.ribolov .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ribolov .container article:first-child {
+  flex: 0 0 60%;
+}
+@media (max-width: 766px) {
+  .ribolov .container article:first-child {
+    flex: 0 0 90%;
+    margin: 10px auto;
+  }
+}
+.ribolov .container article:first-child h1 {
+  font-size: 2.6rem;
+  padding-bottom: 20px;
+}
+.ribolov .container article:first-child img {
+  padding-top: 15px;
+}
+.ribolov .container article:last-child {
+  flex: 0 0 30%;
+}
+@media (max-width: 766px) {
+  .ribolov .container article:last-child {
+    flex: 0 0 90%;
+    margin: 30px auto;
+  }
+}
+.ribolov .container article:last-child aside {
+  background: #dadada;
+  margin-bottom: 20px;
+  padding: 40px 20px;
+}
+.ribolov .container article:last-child aside .povlaka1 {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 90%;
+  margin: 20px 0;
+  background: #52a3bd;
+}
+.ribolov .container article:last-child aside a {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+.plaze {
+  background: url(../img/drive-download-20210816T092223Z-001/plaze.webp);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-position: right;
+}
+
+.kultura {
+  background: url(../img/drive-download-20210816T092223Z-001/kultura.webp);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.fazana {
+  background: url(../img/drive-download-20210816T092223Z-001/kultura1.png);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.objekti {
+  background: url(../img/drive-download-20210816T092223Z-001/kultura.webp);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.restauracija {
+  background: url(../img/drive-download-20210816T092223Z-001/kultura.webp);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.plaza-header {
+  background: url(../img/drive-download-20210816T092223Z-001/plaze.webp);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.prirodna-header {
+  background: url(../img/drive-download-20210816T092223Z-001/priroda-header.webp);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.brijuni {
+  background: url(../img/drive-download-20210816T092223Z-001/priroda-header1.webp);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.ribolov1 {
+  line-height: 1.4;
+}
+
+.valbandon {
+  background: url(../img/drive-download-20210816T092223Z-001/priroda-header2.webp);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.biljke {
+  background: url(../img/drive-download-20210816T092223Z-001/priroda-header3.webp);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-header {
+  background: url(../img/drive-download-20210816T092223Z-001/blog1.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+hgroup {
+  padding: 40px 0;
+  text-align: center;
+}
+hgroup h1 {
+  color: #52a3bd;
+  font-size: 2.5rem;
+}
+
+.blog .container .article {
+  display: flex;
+}
+.blog .container .article .slika {
+  flex: 0 0 50%;
+}
+@media (max-width: 766px) {
+  .blog .container .article .slika {
+    flex: 0 0 60%;
+  }
+}
+.blog .container .article .slika img {
+  width: 100%;
+}
+@media (max-width: 766px) {
+  .blog .container .article .slika img {
+    height: 300px;
+  }
+}
+.blog .container .article .tekst {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+@media (max-width: 766px) {
+  .blog .container .article .tekst {
+    flex: 0 0 37%;
+  }
+}
+@media (max-width: 766px) {
+  .blog .container .article .tekst h2 {
+    font-size: 1rem;
+  }
+}
+.blog .container .article .tekst p {
+  padding: 6px 0;
+}
+@media (max-width: 766px) {
+  .blog .container .article .tekst p {
+    font-size: 0.9rem;
+  }
+}
+.blog .container .article .tekst a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 100px;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+.blog .container .article .tekst a:hover {
+  color: #52a3bd;
+  transition: 0.4s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  align-items: center;
+  padding: 0 40px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 30px;
+}
+nav ul li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #6b6b6b;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: #52a3bd;
+}
+
+.naslov h1 {
+  font-size: 2.5rem;
+  padding: 10px 40px;
+  background: #f6f8fa;
+  text-align: justify;
+  color: #6b6b6b;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  line-height: 1.8;
+}
+
+span {
+  font-weight: 900;
+}
+
+.dogadjanja1 {
+  background: url(../img/drive-download-20210816T092223Z-001/dogadjanja.webp);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/*# sourceMappingURL=style.css.map */

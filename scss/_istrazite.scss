@@ -1,0 +1,29 @@
+.header1 {
+    background: url(../img/drive-download-20210816T092223Z-001/izleti.webp);
+    @include background;
+    height: 70vh;
+}
+
+.tekstDobrodoslice {
+    padding: 100px 40px 0 40px;
+    h1 {
+        padding: 20px 0;
+        font-size: 3rem;
+        font-weight: 600;
+        color: $primary;
+        text-shadow: $textShadow;
+    }
+
+    p {
+        color: $text-color;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        height: 5px;
+        max-width: 1140px;
+        background: #555;
+        margin:100px  auto;
+    }
+}

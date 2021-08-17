@@ -1,0 +1,57 @@
+.ribolov-header {
+    height: 70vh;
+}
+.ribolov {
+    padding: $padding;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        article {
+
+            &:first-child {
+                flex: 0 0 60%;
+                @media (max-width: 766px) {
+                    flex: 0 0 90%;
+                    margin: 10px auto;
+                  
+                }
+                h1 {
+                    font-size: 2.6rem;
+                    padding-bottom: 20px;
+                }
+                img {
+                    padding-top: 15px;
+                }
+            }
+            &:last-child {
+                flex: 0 0 30%;
+                @media (max-width: 766px) {
+                    flex: 0 0 90%;
+                    margin: 30px auto;
+                }
+
+                aside {
+                    background: #dadada;
+                    margin-bottom: 20px;
+                    padding: 40px 20px;
+
+
+                    .povlaka1 {
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        width: 90%;
+                        margin: 20px 0;
+                        background: $primary;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,310 @@
+ /******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+                               H E A D E R
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************/
+ 
+ 
+ .icons {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+
+    @media (max-width: 766px) {
+        right: 0px;
+    }
+
+
+
+    a {
+        font-size: 3rem;
+
+        @media (max-width: 766px) {
+            font-size: 1.8rem;
+        }
+        .fa-facebook-square {
+            color: darkblue;
+        }
+        .fa-instagram-square {
+            color:darkmagenta;
+        }
+        .fa-youtube-square {
+            color: darkred;
+        }
+
+        &:hover {
+            margin-left: -15px;
+        }
+
+    }
+}
+
+
+header {
+    background: url(../img/drive-download-20210816T092223Z-001/header1.webp);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    .linear-gradient {
+        content: "";
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(to right, $secondary 50%, $primary);
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background: $white;
+        align-items: center;
+        padding: 0 40px;
+
+        @media (max-width: 766px) {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                margin-left: 30px;
+                a {
+                    font-size: 1.2rem;
+                    text-decoration: none;
+                    color: $text-color;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: $white;
+        background: rgba(128, 255, 0, 0.485);
+        box-shadow: 2px 2px 40px chartreuse;
+        display: inline-block;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        font-weight: 600;
+    }
+}
+
+/******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+                                I S T R A Z I T E
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************/
+
+.istrazite {
+    padding: $padding;
+    .povlaka {
+        content: "";
+        display: block;
+        margin: auto;
+        height: 7px;
+        width: 10%;
+        background: linear-gradient(to right, $secondary 50%, $primary);
+    }
+    h1 {
+        font-size: 2.5rem;
+        padding: 20px;
+        text-align: center;
+        color: $text-color;
+        font-weight: 900;
+        text-shadow: $textShadow;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        article {
+            flex: 0 0 49%;
+            position: relative;
+            margin-bottom: 20px;
+            @media (max-width: 766px) {
+                flex: 0 0 90%;
+                margin: 30px auto;
+            }
+        
+
+            &:hover {
+                transform: scale(.99);
+                transition: 1.5s ease-in-out;
+            }
+
+            img {
+                width: 100%;
+                box-shadow: $boxShadow;
+                border-radius: 10px;  
+                height: 300px;
+
+            }
+
+            h1 {
+                position: absolute;
+                color: rgb(211, 198, 145);
+                z-index: 3;
+                font-size: 1.5rem;
+                bottom: 30px;
+                left: 20px;
+                background: $white;
+                color: $primary;
+                padding: 5px 10px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+/******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+                                D O G A D J A N J A
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************/
+
+.dogadjanja {
+    padding: $padding;
+
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 20px 0 40px 0;
+        color: $text-color;
+        text-shadow: $textShadow;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        article {
+            flex: 0 0 30%;
+            box-shadow: $boxShadow;
+            @media (max-width: 766px) {
+                flex: 0 0 90%;
+                margin: 30px auto;
+            }
+
+       
+
+            img {
+                width: 100%;
+                
+
+                &:hover {
+                    transform: scale(.99);
+                    transition: .9s;
+                }
+            }
+
+            .text {
+                background: $white;
+                padding: 30px 10px;
+                h3 {
+                    color: $text-color;
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+
+                h1 {
+                    font-size: 1.5rem;
+                    text-align: justify;
+                    padding: 10px 0 20px 0;
+                    font-weight: 500;
+
+                }
+                a {
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    padding:5px 20px;
+                    border: 1px solid black;
+                    // margin: 10px 0 40px 0;
+                    color: black;
+
+                    &:hover {
+                        background: $primary ;
+                        color: $white;
+                        border: 0;
+                        transition: .6s ease;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+                                F O O T E R
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************/
+
+footer {
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7) ), url(../img/drive-download-20210816T092223Z-001/footer.jpg);
+    @include background;
+    line-height: 1.4;
+    padding: 10vh;
+    color: $white;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+       
+        article {
+            flex: 0 0 30%;
+
+            @media (max-width: 766px) {
+                flex: 0 0 90%;
+                margin: 20px auto;
+                
+            }
+
+            h1 {
+                padding: 20px 0;
+                font-size: 1.8rem;
+                text-shadow: $textShadow;
+
+            }
+
+            a {
+                color: $white;
+                text-decoration: none;
+                line-height: 2;
+            }
+        }
+    }
+}
